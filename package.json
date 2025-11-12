@@ -1,0 +1,21 @@
+{
+  "name": "metricool-auto-post",
+  "version": "1.0.0",
+  "description": "## 🎉 完全配置完成！",
+  "main": "config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.929.0",
+    "axios": "^1.13.2",
+    "axios-retry": "^4.5.0",
+    "form-data": "^4.0.4",
+    "googleapis": "^166.0.0",
+    "socks-proxy-agent": "^8.0.5",
+    "xlsx": "^0.18.5"
+  }
+}

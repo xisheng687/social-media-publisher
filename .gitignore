@@ -1,0 +1,36 @@
+# Sensitive configuration files
+config.js
+r2-credentials.txt
+
+# Work files with real data
+贴文发布.xlsx
+
+# Video files
+videos/*.mp4
+videos/*.mov
+videos/*.avi
+videos/*.mkv
+!videos/.gitkeep
+
+# Dependencies
+node_modules/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
