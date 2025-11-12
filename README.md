@@ -96,7 +96,7 @@ AI自动执行:
 - `src/` - 程序代码（不用管，AI或系统自动运行）
 - `docs/` - 技术文档（遇到问题时查阅）
 - `package.json`、`config.example.js` - 配置文件（用户指南会教你）
-- `node_modules/` - 依赖包文件夹（**不会出现在GitHub下载中**，运行`npm install`后自动生成，也不用管）
+- `node_modules/` - 依赖包文件夹（运行`npm install`后自动生成，不用管）
 
 **简单流程**：下载 → 看README → 读用户指南 → 填Excel → 放视频 → 运行脚本 ✅
 
