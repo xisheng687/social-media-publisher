@@ -1,6 +1,6 @@
 # Social Media Batch Publisher
 
-**AI驱动的批量发布工具 - 3分钟发布20个视频到5个平台，替代3小时手动劳动**
+**AI驱动的批量发布工具 - 3分钟发布20个视频到多个平台，替代3小时手动劳动**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Node.js](https://img.shields.io/badge/node-%3E%3D14.0.0-brightgreen)](https://nodejs.org/)
@@ -11,7 +11,7 @@
 ## 💡 这个工具是什么？
 
 一个自动化批量发布工具，帮助内容创作者将视频一次性发布到多个社交媒体平台：
-- **支持平台**: Instagram、TikTok、YouTube、Facebook、Threads
+- **支持平台**: 20+平台，包括Instagram、TikTok、YouTube、Facebook、LinkedIn、X(Twitter)、Pinterest、Twitch、Threads等
 - **核心功能**: Excel管理内容 + 批量上传 + 定时排期
 - **特色**: AI驱动操作，口述发布规则即可完成配置
 
@@ -20,7 +20,7 @@
 ## 🎯 解决什么问题？
 
 ### 痛点
-- 手动上传20个视频到5个平台 = **3小时重复劳动**
+- 手动上传20个视频到多个平台 = **3小时重复劳动**
 - 逐个设置发布时间，容易出错
 - 视频托管服务费用高昂（AWS S3等）
 
@@ -42,7 +42,7 @@
 
 **Metricool** ($15-30/月)
 - 市面上最便宜的多平台API工具
-- 支持5个主流社交平台
+- 支持20+主流社交平台
 - 提供数据分析和排期管理
 
 **Cloudflare R2** (~$0.01/月)
@@ -217,7 +217,14 @@ social-media-publisher/
 
 ## ⚠️ 重要限制
 
-**视频要求**: ≤60秒，<100MB（各平台限制不同，详见用户指南）
+**视频要求**（因平台而异）:
+- **文件大小**: <500MB（Metricool限制）
+- **时长限制**: 各平台不同
+  - Instagram轮播: 60秒
+  - Instagram单视频: 15分钟（自动）/60分钟（手动）
+  - TikTok: 10分钟
+  - YouTube: 15分钟（未验证账号）/无限制（已验证）
+  - 其他平台详见用户指南
 
 **Metricool限制**:
 - API Token可能过期（尤其TikTok，需重新授权）
